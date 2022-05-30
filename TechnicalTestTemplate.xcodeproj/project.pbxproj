@@ -10,13 +10,17 @@
 		3F7CC3012779978F00415290 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CC3002779978F00415290 /* music.mp3 */; };
 		3FE50CCF277460AF00F21258 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE50CCE277460AF00F21258 /* AppDelegate.swift */; };
 		3FE50CD1277460AF00F21258 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE50CD0277460AF00F21258 /* SceneDelegate.swift */; };
-		3FE50CD3277460AF00F21258 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE50CD2277460AF00F21258 /* ViewController.swift */; };
-		3FE50CD6277460AF00F21258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE50CD4277460AF00F21258 /* Main.storyboard */; };
 		3FE50CD8277460B100F21258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE50CD7277460B100F21258 /* Assets.xcassets */; };
 		3FE50CDB277460B100F21258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE50CD9277460B100F21258 /* LaunchScreen.storyboard */; };
 		3FE50CE6277460B100F21258 /* TechnicalTestTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE50CE5277460B100F21258 /* TechnicalTestTemplateTests.swift */; };
 		3FE50CF0277460B200F21258 /* TechnicalTestTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE50CEF277460B200F21258 /* TechnicalTestTemplateUITests.swift */; };
 		3FE50CF2277460B200F21258 /* TechnicalTestTemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE50CF1277460B200F21258 /* TechnicalTestTemplateUITestsLaunchTests.swift */; };
+		C536269C2844FDD600B8390A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536269B2844FDD600B8390A /* HomeViewController.swift */; };
+		C536269E28450EE700B8390A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536269D28450EE700B8390A /* Extension.swift */; };
+		C53626A02845180900B8390A /* COMIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C536269F2845180900B8390A /* COMIC.TTF */; };
+		C53626A42845199900B8390A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53626A32845199900B8390A /* NewsViewController.swift */; };
+		C53626A828451B2800B8390A /* NewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53626A728451B2800B8390A /* NewsCellView.swift */; };
+		C53626AA28451DEF00B8390A /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53626A928451DEF00B8390A /* NewsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,6 @@
 		3FE50CCB277460AF00F21258 /* TechnicalTestTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechnicalTestTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE50CCE277460AF00F21258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE50CD0277460AF00F21258 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FE50CD2277460AF00F21258 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3FE50CD5277460AF00F21258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FE50CD7277460B100F21258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FE50CDA277460B100F21258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FE50CDC277460B100F21258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +53,12 @@
 		3FE50CEB277460B200F21258 /* TechnicalTestTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechnicalTestTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE50CEF277460B200F21258 /* TechnicalTestTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTestTemplateUITests.swift; sourceTree = "<group>"; };
 		3FE50CF1277460B200F21258 /* TechnicalTestTemplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTestTemplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C536269B2844FDD600B8390A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C536269D28450EE700B8390A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C536269F2845180900B8390A /* COMIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COMIC.TTF; sourceTree = "<group>"; };
+		C53626A32845199900B8390A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C53626A728451B2800B8390A /* NewsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellView.swift; sourceTree = "<group>"; };
+		C53626A928451DEF00B8390A /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +120,15 @@
 				3F7CC2FF2779976100415290 /* Resources */,
 				3FE50CCE277460AF00F21258 /* AppDelegate.swift */,
 				3FE50CD0277460AF00F21258 /* SceneDelegate.swift */,
-				3FE50CD2277460AF00F21258 /* ViewController.swift */,
-				3FE50CD4277460AF00F21258 /* Main.storyboard */,
+				C536269B2844FDD600B8390A /* HomeViewController.swift */,
+				C53626A32845199900B8390A /* NewsViewController.swift */,
+				C53626A728451B2800B8390A /* NewsCellView.swift */,
 				3FE50CD7277460B100F21258 /* Assets.xcassets */,
 				3FE50CD9277460B100F21258 /* LaunchScreen.storyboard */,
 				3FE50CDC277460B100F21258 /* Info.plist */,
+				C536269D28450EE700B8390A /* Extension.swift */,
+				C536269F2845180900B8390A /* COMIC.TTF */,
+				C53626A928451DEF00B8390A /* NewsModel.swift */,
 			);
 			path = TechnicalTestTemplate;
 			sourceTree = "<group>";
@@ -242,10 +254,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53626A02845180900B8390A /* COMIC.TTF in Resources */,
 				3F7CC3012779978F00415290 /* music.mp3 in Resources */,
 				3FE50CDB277460B100F21258 /* LaunchScreen.storyboard in Resources */,
 				3FE50CD8277460B100F21258 /* Assets.xcassets in Resources */,
-				3FE50CD6277460AF00F21258 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE50CD3277460AF00F21258 /* ViewController.swift in Sources */,
+				C53626AA28451DEF00B8390A /* NewsModel.swift in Sources */,
 				3FE50CCF277460AF00F21258 /* AppDelegate.swift in Sources */,
 				3FE50CD1277460AF00F21258 /* SceneDelegate.swift in Sources */,
+				C536269C2844FDD600B8390A /* HomeViewController.swift in Sources */,
+				C53626A828451B2800B8390A /* NewsCellView.swift in Sources */,
+				C53626A42845199900B8390A /* NewsViewController.swift in Sources */,
+				C536269E28450EE700B8390A /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3FE50CD4277460AF00F21258 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FE50CD5277460AF00F21258 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3FE50CD9277460B100F21258 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -455,7 +463,6 @@
 				INFOPLIST_FILE = TechnicalTestTemplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -484,7 +491,6 @@
 				INFOPLIST_FILE = TechnicalTestTemplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
