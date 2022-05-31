@@ -26,7 +26,7 @@ class NewsCellView: UITableViewCell {
                     descriptionLabel.text = "-"
                 }
                 
-                if let authorValue = article.description {
+                if let authorValue = article.author {
                     authorLabel.text = "Author: \(authorValue)"
                 } else {
                     authorLabel.text = "Author: -"
@@ -40,35 +40,38 @@ class NewsCellView: UITableViewCell {
     lazy var uiImageView: UIImageView = {
         let imageView: UIImageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
-    lazy var VStackView: UIStackView = {
+    lazy var vStackView: UIStackView = {
         var stackView: UIStackView = UIStackView()
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.spacing = thinMargin
+        stackView.alignment = .leading
         return stackView
     }()
     
-    lazy var HStackView: UIStackView = {
+    lazy var hStackView: UIStackView = {
         var stackView: UIStackView = UIStackView()
         stackView.axis = .horizontal
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.spacing = thinMargin
+        stackView.spacing = mainMargin
+        stackView.alignment = .leading
         return stackView
     }()
     
     lazy var descriptionLabel: UILabel = {
         let label: UILabel = UILabel()
-        label.numberOfLines = 0
+        label.numberOfLines = 3
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     lazy var authorLabel: UILabel = {
         let label: UILabel = UILabel()
-        label.numberOfLines = 0
+        label.numberOfLines = 1
         label.textColor = .gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -90,29 +93,22 @@ class NewsCellView: UITableViewCell {
     
     private func setupViews(){
         backgroundColor = .white
-        self.addSubview(HStackView)
-        HStackView.addArrangedSubview(uiImageView)
-        HStackView.addArrangedSubview(VStackView)
-        VStackView.addArrangedSubview(descriptionLabel)
-        VStackView.addArrangedSubview(authorLabel)
+        self.addSubview(hStackView)
+        hStackView.addArrangedSubview(uiImageView)
+        hStackView.addArrangedSubview(vStackView)
+        vStackView.addArrangedSubview(descriptionLabel)
+        vStackView.addArrangedSubview(authorLabel)
     }
     
     private func setupLayouts(){
         NSLayoutConstraint.activate([
-            HStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: thinMargin),
-            HStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -thinMargin),
-            HStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: thinMargin),
-            HStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -thinMargin),
+            hStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: thinMargin),
+            hStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -thinMargin),
+            hStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: thinMargin),
+            hStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -thinMargin),
+            
+            uiImageView.heightAnchor.constraint(equalToConstant: 90),
+            uiImageView.widthAnchor.constraint(equalToConstant: 90)
         ])
     }
-    
-//    open func setData(image: UIImage, descriptionValue: String, authorValue: String){
-//        self.image = image
-//        self.descriptionValue = descriptionValue
-//        self.authorValue = authorValue
-//
-//        imageView?.image = self.image
-//        descriptionLabel.text = self.descriptionValue
-//        authorLabel.text = "Author: \(self.authorValue)"
-//    }
 }

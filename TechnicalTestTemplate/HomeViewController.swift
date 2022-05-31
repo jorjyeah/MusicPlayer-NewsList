@@ -47,9 +47,9 @@ class HomeViewController: UIViewController{
         button.backgroundColor = UIColor.init(rgb: 0x118ee9)
         button.sizeToFit()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(handleClick), for: .touchUpInside)
         return button
     }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +75,11 @@ class HomeViewController: UIViewController{
             
             selectNewsButton.leadingAnchor.constraint(equalTo: self.stackView.leadingAnchor),
             selectNewsButton.trailingAnchor.constraint(equalTo: self.stackView.trailingAnchor),
-
         ])
+    }
+    
+    @objc func handleClick(sender: UIButton){
+        let vc = NewsViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

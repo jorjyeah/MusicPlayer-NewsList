@@ -21,6 +21,8 @@
 		C53626A42845199900B8390A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53626A32845199900B8390A /* NewsViewController.swift */; };
 		C53626A828451B2800B8390A /* NewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53626A728451B2800B8390A /* NewsCellView.swift */; };
 		C53626AA28451DEF00B8390A /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53626A928451DEF00B8390A /* NewsModel.swift */; };
+		C53626AC28453B9900B8390A /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53626AB28453B9900B8390A /* APICall.swift */; };
+		C53626AE28453E4F00B8390A /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53626AD28453E4F00B8390A /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		C53626A32845199900B8390A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		C53626A728451B2800B8390A /* NewsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellView.swift; sourceTree = "<group>"; };
 		C53626A928451DEF00B8390A /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		C53626AB28453B9900B8390A /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		C53626AD28453E4F00B8390A /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +121,13 @@
 		3FE50CCD277460AF00F21258 /* TechnicalTestTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C53626AB28453B9900B8390A /* APICall.swift */,
 				3F7CC2FF2779976100415290 /* Resources */,
 				3FE50CCE277460AF00F21258 /* AppDelegate.swift */,
 				3FE50CD0277460AF00F21258 /* SceneDelegate.swift */,
 				C536269B2844FDD600B8390A /* HomeViewController.swift */,
 				C53626A32845199900B8390A /* NewsViewController.swift */,
+				C53626AD28453E4F00B8390A /* NewsViewModel.swift */,
 				C53626A728451B2800B8390A /* NewsCellView.swift */,
 				3FE50CD7277460B100F21258 /* Assets.xcassets */,
 				3FE50CD9277460B100F21258 /* LaunchScreen.storyboard */,
@@ -283,11 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C53626AA28451DEF00B8390A /* NewsModel.swift in Sources */,
+				C53626AE28453E4F00B8390A /* NewsViewModel.swift in Sources */,
 				3FE50CCF277460AF00F21258 /* AppDelegate.swift in Sources */,
 				3FE50CD1277460AF00F21258 /* SceneDelegate.swift in Sources */,
 				C536269C2844FDD600B8390A /* HomeViewController.swift in Sources */,
 				C53626A828451B2800B8390A /* NewsCellView.swift in Sources */,
 				C53626A42845199900B8390A /* NewsViewController.swift in Sources */,
+				C53626AC28453B9900B8390A /* APICall.swift in Sources */,
 				C536269E28450EE700B8390A /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
