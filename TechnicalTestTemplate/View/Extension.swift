@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 extension UIView {
   var safeTopAnchor: NSLayoutYAxisAnchor {
@@ -80,3 +81,4 @@ extension UIImageView {
     }
 }
 
+var player: AVAudioPlayer?

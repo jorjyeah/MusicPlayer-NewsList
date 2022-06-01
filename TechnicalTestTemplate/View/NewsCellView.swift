@@ -8,6 +8,7 @@
 import UIKit
 
 class NewsCellView: UITableViewCell {
+    // MARK: Properties
     public var cellId: String = "NewsCell"
     
     var article: Articles? {
@@ -15,15 +16,15 @@ class NewsCellView: UITableViewCell {
             if let article = article {
                 
                 if let imageUrlString = article.urlToImage {
-                    uiImageView.downloaded(from: imageUrlString)
+                    uiImageView.downloaded(from: imageUrlString, contentMode: .scaleAspectFill)
                 } else {
                     uiImageView.image = UIImage()
                 }
                 
-                if let descriptionValue = article.description {
-                    descriptionLabel.text = descriptionValue
+                if let titleValue = article.title {
+                    titleLabel.text = titleValue
                 } else {
-                    descriptionLabel.text = "-"
+                    titleLabel.text = "-"
                 }
                 
                 if let authorValue = article.author {
@@ -37,10 +38,13 @@ class NewsCellView: UITableViewCell {
         }
     }
 
+    // MARK: Components
     lazy var uiImageView: UIImageView = {
         let imageView: UIImageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
+        imageView.image = UIImage(named: "placeholder-image")
+        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -62,9 +66,10 @@ class NewsCellView: UITableViewCell {
         return stackView
     }()
     
-    lazy var descriptionLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
         let label: UILabel = UILabel()
-        label.numberOfLines = 3
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -77,6 +82,7 @@ class NewsCellView: UITableViewCell {
         return label
     }()
     
+    // MARK: Default Functions
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
@@ -96,19 +102,19 @@ class NewsCellView: UITableViewCell {
         self.addSubview(hStackView)
         hStackView.addArrangedSubview(uiImageView)
         hStackView.addArrangedSubview(vStackView)
-        vStackView.addArrangedSubview(descriptionLabel)
+        vStackView.addArrangedSubview(titleLabel)
         vStackView.addArrangedSubview(authorLabel)
     }
     
     private func setupLayouts(){
         NSLayoutConstraint.activate([
-            hStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: thinMargin),
-            hStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -thinMargin),
+            hStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: mainMargin),
+            hStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -mainMargin),
             hStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: thinMargin),
             hStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -thinMargin),
             
-            uiImageView.heightAnchor.constraint(equalToConstant: 90),
-            uiImageView.widthAnchor.constraint(equalToConstant: 90)
+            uiImageView.heightAnchor.constraint(equalToConstant: 120),
+            uiImageView.widthAnchor.constraint(equalToConstant: 120)
         ])
     }
 }
