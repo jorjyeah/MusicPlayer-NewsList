@@ -161,6 +161,7 @@ class AudioPlayerView: UIViewController, AudioPlayerProtocol, AVAudioPlayerDeleg
         debugPrint(flag)
         if flag {
             audioState = .pause
+            debugPrint(audioState)
             updateButton()
         }
     }
